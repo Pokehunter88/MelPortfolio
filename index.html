@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melvin Crabtree — Furniture Craftsman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       IMAGES TO REPLACE
+       ============================================================
+       images/hero.jpg         — Best single piece, landscape orientation
+       images/about.jpg        — Photo of you in the workshop
+       images/gallery/piece-01.jpg  through  piece-12.jpg
+         piece-01: (Tables)   e.g. Dining table
+         piece-02: (Tables)   e.g. Side table
+         piece-03: (Tables)   e.g. Coffee table
+         piece-04: (Chairs)   e.g. Armchair
+         piece-05: (Chairs)   e.g. Dining chair
+         piece-06: (Chairs)   e.g. Stool
+         piece-07: (Storage)  e.g. Bookshelf
+         piece-08: (Storage)  e.g. Cabinet
+         piece-09: (Storage)  e.g. Chest
+         piece-10: (Decor)    e.g. Wooden bowl
+         piece-11: (Decor)    e.g. Wall art
+         piece-12: (Decor)    e.g. Cutting board / serving piece
+       ============================================================ -->
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Melvin Crabtree</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg" style="background-image: url('images/hero.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Handcrafted Furniture</p>
+      <h1>Melvin Crabtree</h1>
+      <p class="hero-tagline">Furniture Craftsman</p>
+    </div>
+    <a href="#portfolio" class="hero-scroll" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Portfolio</h2>
+        <p class="section-sub">Handcrafted pieces built with care and intention.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="tables">Tables</button>
+        <button class="filter-btn" data-filter="chairs">Chairs</button>
+        <button class="filter-btn" data-filter="storage">Storage</button>
+        <button class="filter-btn" data-filter="decor">Decor</button>
+      </div>
+
+      <div class="gallery" id="gallery">
+
+        <div class="gallery-item" data-category="tables">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/piece-01.jpg" alt="Solid oak dining table with hand-cut dovetail joints" loading="lazy" />
+            <div class="gallery-caption">Oak Dining Table</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="tables">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/piece-02.jpg" alt="Walnut side table with tapered legs" loading="lazy" />
+            <div class="gallery-caption">Walnut Side Table</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="tables">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/piece-03.jpg" alt="Live edge cherry wood coffee table" loading="lazy" />
+            <div class="gallery-caption">Live Edge Coffee Table</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="chairs">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/piece-04.jpg" alt="Hand-shaped walnut armchair with upholstered seat" loading="lazy" />
+            <div class="gallery-caption">Walnut Armchair</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="chairs">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/piece-05.jpg" alt="Set of four ash wood dining chairs" loading="lazy" />
+            <div class="gallery-caption">Ash Dining Chair</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="chairs">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/piece-06.jpg" alt="Three-legged stool in maple with mortise and tenon joinery" loading="lazy" />
+            <div class="gallery-caption">Maple Stool</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="storage">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/piece-07.jpg" alt="Floor-to-ceiling walnut bookshelf with adjustable shelves" loading="lazy" />
+            <div class="gallery-caption">Walnut Bookshelf</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="storage">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/piece-08.jpg" alt="Sideboard cabinet in white oak with hand-cut joints" loading="lazy" />
+            <div class="gallery-caption">White Oak Sideboard</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="storage">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/piece-09.jpg" alt="Blanket chest in cherry with decorative hand carving" loading="lazy" />
+            <div class="gallery-caption">Cherry Blanket Chest</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="decor">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/piece-10.jpg" alt="Turned wooden bowl in spalted maple" loading="lazy" />
+            <div class="gallery-caption">Spalted Maple Bowl</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="decor">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/piece-11.jpg" alt="Geometric walnut wall panel with inlaid details" loading="lazy" />
+            <div class="gallery-caption">Walnut Wall Panel</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="decor">
+          <div class="gallery-img-wrap">
+            <img src="images/gallery/piece-12.jpg" alt="End grain cutting board in walnut and maple" loading="lazy" />
+            <div class="gallery-caption">End Grain Cutting Board</div>
+          </div>
+        </div>
+
+      </div><!-- /gallery -->
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner about-inner">
+      <div class="about-photo">
+        <img src="images/about.jpg" alt="Melvin Crabtree in the workshop" />
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I've been working with wood for as long as I can remember. What started as a hobby in my garage has grown into a lifelong craft — one I've dedicated years to refining, piece by piece.
+        </p>
+        <p>
+          I specialize in stylistic furniture that balances form and function. Every joint is cut by hand where possible, every surface is finished with care. I believe the details are what separate furniture from craft.
+        </p>
+        <p>
+          I'm looking for the opportunity to bring that same level of dedication to a team that values quality craftsmanship.
+        </p>
+
+        <div class="skills">
+          <div class="skill-group">
+            <h4>Joinery</h4>
+            <ul>
+              <li>Dovetail</li>
+              <li>Mortise &amp; Tenon</li>
+              <li>Box Joint</li>
+              <li>Bridle Joint</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4>Wood Species</h4>
+            <ul>
+              <li>Walnut</li>
+              <li>White Oak</li>
+              <li>Cherry</li>
+              <li>Maple &amp; Ash</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4>Tools &amp; Techniques</h4>
+            <ul>
+              <li>Hand Planes</li>
+              <li>Chisels &amp; Mallets</li>
+              <li>Table Saw &amp; Band Saw</li>
+              <li>Wood Turning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner contact-inner">
+      <h2>Get In Touch</h2>
+      <p class="section-sub">Interested in my work or have an opportunity to discuss? I'd love to hear from you.</p>
+      <form class="contact-form" action="mailto:your@email.com" method="POST" enctype="text/plain">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" rows="5" placeholder="Tell me about the opportunity or project..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-name">Melvin Crabtree</span>
+      <nav class="footer-nav">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="footer-copy">&copy; 2026</span>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous">&#8592;</button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Next">&#8594;</button>
+    <div class="lightbox-img-wrap">
+      <img id="lightbox-img" src="" alt="" />
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
